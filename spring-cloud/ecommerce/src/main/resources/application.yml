@@ -1,0 +1,13 @@
+#Eureka server (Web service처럼 구동됨)
+server:
+  port: 8761
+
+spring:
+  application:
+    name: discoveryservice
+
+# Eureka server 자기 자신을 등록하지 않는다.
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
